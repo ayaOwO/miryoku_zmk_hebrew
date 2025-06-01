@@ -6,9 +6,9 @@
 [[https://raw.githubusercontent.com/manna-harbour/miryoku/master/data/cover/miryoku-kle-cover-miryoku_zmk.png]]
 
 ** Fork notes
-This fork adds an `alt+tab` macro when you swap between the primary and secondary layout,
+This fork adds an `alt+shift` macro when you swap between the primary and secondary layout (Switching the software keyboard layout along side the layer),
 
-thus enabling you to use a hardcoded dvorak/colemak layout while still using qwerty for the second language on your computer
+thus allowing you to use a hardcoded dvorak/colemak layout while still using qwerty for the second language on your computer
 
 whithout having to both switch layers and change the language used in firmware
 
