@@ -184,7 +184,7 @@ U_NP,              U_NP,              &kp DEL,           &kp BSPC,          &kp 
 
 #define MIRYOKU_ALTERNATIVES_TAP_GAMING_FLIP \
 &kp N3,             &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp U,             &kp I,             &kp O,             &kp P,             \
-&kp N2,             &kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp J,             &kp K,             &kp L,             &u_to_U_BASE,      \
+&kp N2,             &kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp J,             &kp K,             &kp L,             &to U_BASE,        \
 &kp N1,             &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
 U_NP,              U_NP,              &kp DEL,           &kp BSPC,          &kp RET,           &kp TAB,           &kp SPACE,         &kp ESC,           U_NP,              U_NP
 
@@ -250,7 +250,7 @@ U_NP,              U_NP,              &kp ESC,           &kp SPACE,         &kp 
 
 #define MIRYOKU_ALTERNATIVES_TAP_GAMING \
 &kp N3,             &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp U,             &kp I,             &kp O,             &kp P,             \
-&kp N2,             &kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp J,             &kp K,             &kp L,             &u_to_U_BASE,      \
+&kp N2,             &kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp J,             &kp K,             &kp L,             &to U_BASE,        \
 &kp N1,             &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
 U_NP,              U_NP,              &kp ESC,           &kp SPACE,         &kp TAB,           &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
 
