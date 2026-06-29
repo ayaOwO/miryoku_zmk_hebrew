@@ -8,10 +8,11 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/ext_power.h>
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1250
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 100
+#include <dt-bindings/zmk/pointing.h>
 
 #include "miryoku.h"
-
-#include <dt-bindings/zmk/pointing.h>
 
 / {
   keymap {
