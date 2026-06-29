@@ -238,7 +238,7 @@ jobs:
           zmk=`echo "$branches" | cut -d ' ' -f 1`
           if [ -z "$zmk" ]
           then
-            zmk='zmkfirmware/zmk/main'
+            zmk='zmkfirmware/zmk/v0.3.0'
           fi
           user=`echo "$zmk" | cut -f 1 -d '/'`
           repo=`echo "$zmk" | cut -f 2 -d '/'`
@@ -372,4 +372,3 @@ jobs:
         with:
           name: ${{ steps.main.outputs.run_name }}
           path: ${{ steps.main.outputs.artifact_dir }}
-
