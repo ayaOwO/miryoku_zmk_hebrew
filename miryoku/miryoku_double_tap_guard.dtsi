@@ -6,7 +6,6 @@
   behaviors { \
     NAME: NAME { \
       compatible = "zmk,behavior-tap-dance"; \
-      label = U_STRINGIFY(NAME); \
       #binding-cells = <0>; \
       tapping-term-ms = <U_TAPPING_TERM>; \
       bindings = <&none>, <BINDING>; \
@@ -14,21 +13,35 @@
   }; \
 };
 
-#define MIRYOKU_X(LAYER, STRING) \
+#if !defined (MIRYOKU_KLUDGE_NO_DOUBLETAPGUARD)
+  #if defined (MIRYOKU_KLUDGE_LANGUAGE_SWITCHER)
+  #define MIRYOKU_X(LAYER, STRING) \
 MIRYOKU_DOUBLE_TAP_GUARD(u_to_U_##LAYER, &to U_##LAYER)
-MIRYOKU_LAYER_SWITCHER_LIST_REST
-#undef MIRYOKU_X
+  MIRYOKU_LAYER_SWITCHER_LIST_REST
+  #undef MIRYOKU_X
 
 
-#define MIRYOKU_X(LAYER, STRING) \
+  #define MIRYOKU_X(LAYER, STRING) \
 MIRYOKU_LANGUAGE_SWITCHER(macro_U_##LAYER, &to U_##LAYER) \
 MIRYOKU_DOUBLE_TAP_GUARD(u_to_U_##LAYER, &macro_U_##LAYER)
-MIRYOKU_LAYER_SWITCHER_LIST
-#undef MIRYOKU_X
+  MIRYOKU_LAYER_SWITCHER_LIST
+  #undef MIRYOKU_X
+  #else
+  #define MIRYOKU_X(LAYER, STRING) \
+MIRYOKU_DOUBLE_TAP_GUARD(u_to_U_##LAYER, &to U_##LAYER)
+  MIRYOKU_LAYER_LIST
+  #undef MIRYOKU_X
+  #endif
+#elif defined (MIRYOKU_KLUDGE_LANGUAGE_SWITCHER)
+  #define MIRYOKU_X(LAYER, STRING) \
+MIRYOKU_LANGUAGE_SWITCHER(macro_U_##LAYER, &to U_##LAYER)
+  MIRYOKU_LAYER_SWITCHER_LIST
+  #undef MIRYOKU_X
+#endif
 
-#if defined (MIRYOKU_KLUDGE_DOUBLETAPBOOT)
-  #if defined (MIRYOKU_KLUDGE_SUSPEND)
-MIRYOKU_DOUBLE_TAP_GUARD(u_suspend, &suspend)
+#if defined (MIRYOKU_KLUDGE_DOUBLETAPBOOT) && !defined (MIRYOKU_KLUDGE_NO_DOUBLETAPGUARD)
+  #if defined (MIRYOKU_KLUDGE_SOFT_OFF)
+MIRYOKU_DOUBLE_TAP_GUARD(u_soft_off, &soft_off)
   #else
 MIRYOKU_DOUBLE_TAP_GUARD(u_bootloader, &bootloader)
   #endif

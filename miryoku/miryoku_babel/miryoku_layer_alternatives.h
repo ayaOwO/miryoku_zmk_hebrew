@@ -181,6 +181,13 @@ U_NP,              U_NP,              &kp DEL,           &kp BSPC,          &kp 
 &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
 U_NP,              U_NP,              &kp DEL,           &kp BSPC,          &kp RET,           &kp TAB,           &kp SPACE,         &kp ESC,           U_NP,              U_NP
 
+
+#define MIRYOKU_ALTERNATIVES_TAP_GAMING_FLIP \
+&kp N1,            &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp U,             &kp I,             &kp O,             &kp P,             \
+&kp LSHFT,         &kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp J,             &kp K,             &kp L,             &to U_BASE,        \
+&kp LCTRL,         &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
+U_NP,              U_NP,              &kp DEL,           &kp BSPC,          &kp RET,           &kp TAB,           &kp SPACE,         &kp ESC,           U_NP,              U_NP
+
 #define MIRYOKU_ALTERNATIVES_TAP_QWERTZ_FLIP \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Z,             &kp U,             &kp I,             &kp O,             &kp P,             \
 &kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
@@ -239,6 +246,12 @@ U_NP,              U_NP,              &kp ESC,           &kp SPACE,         &kp 
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
 &kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
 &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
+U_NP,              U_NP,              &kp ESC,           &kp SPACE,         &kp TAB,           &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_TAP_GAMING \
+&kp N1,            &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp U,             &kp I,             &kp O,             &kp P,             \
+&kp LSHFT,         &kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp J,             &kp K,             &kp L,             &to U_BASE,        \
+&kp LCTRL,         &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
 U_NP,              U_NP,              &kp ESC,           &kp SPACE,         &kp TAB,           &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_TAP_QWERTZ \
