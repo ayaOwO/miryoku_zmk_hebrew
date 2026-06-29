@@ -19,6 +19,7 @@
   #define u_to_U_NUM to U_NUM
   #define u_to_U_SYM to U_SYM
   #define u_to_U_FUN to U_FUN
+  #define u_to_U_HE_NUM to U_HE_NUM
 #endif
 
 #if defined (MIRYOKU_KLUDGE_DOUBLETAPBOOT)
