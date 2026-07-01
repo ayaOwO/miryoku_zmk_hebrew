@@ -10,7 +10,7 @@ jobs:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      board: '["corneish_zen_left","corneish_zen_right"]'
+      board: '["corneish_zen_v2_left","corneish_zen_v2_right"]'
       alphas: '["dvorak"]'
       custom_config: '["#define MIRYOKU_KLUDGE_LANGUAGE_SWITCHER\n#define MIRYOKU_EXTRA_QWERTY\n#define MIRYOKU_TAP_GAMING"]'
       kconfig: '["CONFIG_ZMK_POINTING=y\nCONFIG_ZMK_DISPLAY_HIDE_MOMENTARY_LAYERS=y\nCONFIG_CUSTOM_WIDGET_LAYER_STATUS_HIDE_HEADING=y\nCONFIG_CUSTOM_WIDGET_LOGO_IMAGE_MIRYOKU=y\nCONFIG_IL0323_ALTERNATIVE_REFRESH=y"]'
